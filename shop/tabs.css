@@ -1,0 +1,159 @@
+body {
+  background: #000000;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 112%;
+  
+}
+
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs label {
+  order: 1;
+  display: flex;
+  flex: 25;
+  padding: 16px 32px;
+  background: #290773;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 16px;
+  background: #782aff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+  background: #c991f3;
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+  display: block;
+}
+
+
+@media(max-width: 425px) {
+  .tabs .tab, .tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.zag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(227, 205, 255);
+  font-weight: 500;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(149, 25, 237, 0.685); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #49199d; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #782aff; 
+  }
+
+  img{
+    float: left;
+    padding: auto;
+    border-radius: 20px;
+    margin-right: 4px;
+margin-left: 6px;
+padding: 5px;
+  }
+
+  .button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#6109b8, #5B42F3 50%,#0004eb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 30px;
+    max-width: 80%;
+    min-width: 70px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 40%;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: rgb(7, 8, 45);
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: 70%;
+    height: 80%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 500px) {
+    .button-64 {
+      font-size: 20px;
+      min-width: 100px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
